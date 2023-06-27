@@ -6,7 +6,7 @@
     <application>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="Keys?" />
+            android:value="AIzaSyBPypUxnPHjvrZyV_ZGmBsI-et4SPx7_Zs" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

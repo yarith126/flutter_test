@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/google_maps_view.dart';
+import 'package:flutter_demo/feature_test/view/google_maps_view.dart';
+import 'package:flutter_demo/feature_test/view/two_apps_one_flutter_view.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox('data');
   runApp(const MyApp());
 }
 
@@ -65,7 +69,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   MaterialPageRoute(builder: (_) => const MapSample()),
                 );
               },
-              child: Text('Google Maps Demo'),
+              child: const Text('Google Maps Demo'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => const TwoAppsOneFlutterView()),
+                );
+              },
+              child: const Text('2 Apps 1 Flutter'),
             ),
           ],
         ),
