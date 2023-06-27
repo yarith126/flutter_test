@@ -1,0 +1,105 @@
+JWT: 1f6dbe65ddb1a53fbfd4b6d82f8aa566eeb61b7a
+
+Fetch User
+GET: @/current_user
+
+
+Fetch provinces
+GET: @/base/geo_areas/0?page_size=30&ordering=id
+
+
+Fetch one travel cost and duration
+POST: @/fleets/request
+HEADER:
+{
+  "hr_employee": 3016,
+  "travel_type": "local",
+  "zone": 14, (province id)
+  "departure_time": "2023-06-27T09:03:18Z",
+  "arrival_time": "2023-06-29T09:03:20Z"
+}
+
+
+Fetch travel details
+GET: @/fleets/travels/4
+
+HEADER:
+{
+    "hr_employee": 3016,
+    "travel_hr_employee_info": {
+        "id": 3016,
+        "full_name": "Khai Hok",
+        "phone_number": "086 338 658",
+        "report_to_info": {
+            "id": 782,
+            "full_name": "Chantha Torn",
+            "employee_id": "3655"
+        },
+        "department_info": {
+            "id": 43,
+            "name": "Technology"
+        },
+        "unit_info": {
+            "id": 126,
+            "name": "Business Digitization"
+        },
+        "employee_id": "4977",
+        "job_info": {
+            "id": 170931,
+            "name": "Mobile Fronted Developer"
+        },
+        "employment_status_info": {
+            "id": 3,
+            "name": "Active"
+        },
+        "office_location_info": {
+            "id": 1,
+            "name": "Head Office"
+        },
+        "employment_date": "2021-11-01",
+        "work_email": "khai.hok@wingbank.com.kh",
+        "employment_type_info": {
+            "id": 41,
+            "name": "Regular (Standard)"
+        },
+        "job_category_info": {
+            "id": 48,
+            "name": "Sales"
+        },
+        "contract_type_info": {
+            "id": 40,
+            "name": "Undetermined Duration Contract (UDC)"
+        },
+        "horizontal_report_to_info": null,
+        "file_info": null
+    },
+    "travel_type": "local",
+    "purpose": "asdf",
+    "travel": [
+        {
+            "zone": 14,
+            "departure_time": "2023-06-27T09:10:38Z",
+            "arrival_time": "2023-06-29T09:10:42Z",
+            "travel_geo_area_info": {
+            "id": 14,
+            "create_date": "2023-03-30T15:37:41.346713+07:00",
+            "write_date": "2023-03-30T15:37:41.346713+07:00",
+            "create_uid": 1,
+            "write_uid": null,
+            "name": "Prey Veng",
+            "name_kh": "ព្រៃវែង",
+            "parent_id": 0,
+            "deep_level": 0,
+            "country": 116
+            },
+            "travel_geo_area": 14
+        }
+    ]
+}
+{
+    "hr_employee":3016,
+    "travel_hr_employee_info":{"id":3016,"full_name":"Khai Hok","phone_number":"086 338 658","report_to_info":{"id":782,"full_name":"Chantha Torn","employee_id":"3655"},"department_info":{"id":43,"name":"Technology"},"unit_info":{"id":126,"name":"Business Digitization"},"employee_id":"4977","job_info":{"id":170931,"name":"Mobile Fronted Developer"},"employment_status_info":{"id":3,"name":"Active"},"office_location_info":{"id":1,"name":"Head Office"},"employment_date":"2021-11-01","work_email":"khai.hok@wingbank.com.kh","employment_type_info":{"id":41,"name":"Regular (Standard)"},"job_category_info":{"id":48,"name":"Sales"},"contract_type_info":{"id":40,"name":"Undetermined Duration Contract (UDC)"},"horizontal_report_to_info":null,"file_info":null},
+    "travel_type":"local",
+    "purpose":"asdf",
+    "travel":[{"zone":4,"departure_time":"2023-06-27T10:04:39Z","arrival_time":"2023-06-29T10:04:41Z","travel_geo_area_info":{"id":4,"create_date":"2023-03-30T15:37:41.263879+07:00","write_date":"2023-03-30T15:37:41.263879+07:00","create_uid":1,"write_uid":null,"name":"Kampng Chhnang","name_kh":"កំពង់ឆ្នាំង","parent_id":0,"deep_level":0,"country":116},"travel_geo_area":4}]
+}

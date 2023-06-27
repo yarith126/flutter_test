@@ -1,0 +1,1084 @@
+// @/base/app_init
+{
+    "id": 3377,
+    "full_name": "Khai Hok",
+    "first_name": "Khai",
+    "last_name": "Hok",
+    "email": "khai.hok@wingbank.com.kh",
+    "base_company": {
+        "id": 1,
+        "name": "Wing Bank",
+        "address_line1": null,
+        "address_line2": null,
+        "company_logo": null
+    },
+    "company": [
+        {
+            "id": 1,
+            "name": "Wing Bank",
+            "address_line1": null,
+            "address_line2": null,
+            "company_logo": null
+        }
+    ],
+    "is_superuser": false,
+    "roles": [
+        {
+            "id": 10,
+            "name": "Employee Tester"
+        }
+    ],
+    "file": null,
+    "employee_info": {
+        "id": 3016,
+        "full_name": "Khai Hok",
+        "unit_info": {
+            "id": 126,
+            "name": "Business Digitization"
+        },
+        "job_info": {
+            "id": 170931,
+            "name": "Mobile Fronted Developer"
+        },
+        "employee_id": "4977",
+        "work_email": "khai.hok@wingbank.com.kh",
+        "phone_number": "086 338 658",
+        "office_location_info": {
+            "id": 1,
+            "name": "Head Office"
+        },
+        "report_to_info": {
+            "full_name": "Chantha Torn",
+            "id": 782,
+            "employee_id": "3655"
+        },
+        "department_info": {
+            "id": 43,
+            "name": "Technology"
+        },
+        "file_info": null,
+        "work_shifts_info": []
+    }
+}
+
+// @/current_user
+{
+    "id": 3377,
+    "username": "khai.hok",
+    "email": "khai.hok@wingbank.com.kh",
+    "first_name": "Khai",
+    "last_name": "Hok",
+    "login_type": "pwd",
+    "status": "active",
+    "current_company": {
+        "id": 1,
+        "name": "Wing Bank",
+        "address_line1": null,
+        "address_line2": null,
+        "company_logo": null
+    },
+    "companies": [
+        {
+            "id": 1,
+            "name": "Wing Bank",
+            "address_line1": null,
+            "address_line2": null,
+            "company_logo": null
+        }
+    ],
+    "is_send_email": true,
+    "is_active": true,
+    "groups": [
+        10
+    ],
+    "groups_info": [
+        {
+            "id": 10,
+            "base_company": {
+                "id": 1,
+                "name": "Wing Bank",
+                "address_line1": null,
+                "address_line2": null,
+                "company_logo": null
+            },
+            "name": "Employee Tester",
+            "code": "",
+            "status": true,
+            "company": 1
+        }
+    ],
+    "last_login": "2023-06-27T14:32:30.966543+07:00",
+    "password_expired": "2023-02-08T15:23:04.401000+07:00",
+    "user_type": "internal",
+    "is_password_lock": false,
+    "is_password_expired": false,
+    "is_disable": false,
+    "full_name": "Khai Hok",
+    "current_employee": {
+        "id": 3016,
+        "full_name": "Khai Hok",
+        "phone_number": "086 338 658",
+        "report_to_info": {
+            "id": 782,
+            "full_name": "Chantha Torn",
+            "employee_id": "3655"
+        },
+        "department_info": {
+            "id": 43,
+            "name": "Technology"
+        },
+        "unit_info": {
+            "id": 126,
+            "name": "Business Digitization"
+        },
+        "employee_id": "4977",
+        "job_info": {
+            "id": 170931,
+            "name": "Mobile Fronted Developer"
+        },
+        "employment_status_info": {
+            "id": 3,
+            "name": "Active"
+        },
+        "office_location_info": {
+            "id": 1,
+            "name": "Head Office"
+        },
+        "employment_date": "2021-11-01",
+        "work_email": "khai.hok@wingbank.com.kh",
+        "employment_type_info": {
+            "id": 41,
+            "name": "Regular (Standard)"
+        },
+        "job_category_info": {
+            "id": 48,
+            "name": "Sales"
+        },
+        "contract_type_info": {
+            "id": 40,
+            "name": "Undetermined Duration Contract (UDC)"
+        },
+        "horizontal_report_to_info": null,
+        "file_info": null
+    }
+}
+
+// @/fleets/request
+{
+    "travel_destination": [
+        {
+            "cost": 5.0,
+            "travel_allowance_info": {
+                "id": 2,
+                "allowance_info": {
+                    "id": 6,
+                    "product_info": {
+                        "id": 6,
+                        "category_info": {
+                            "id": 4,
+                            "create_date": "2023-06-16T08:59:36.887919+07:00",
+                            "write_date": "2023-06-16T08:59:36.919233+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "CAT-4",
+                            "name": "Food",
+                            "is_asset": false,
+                            "is_stationary": false,
+                            "is_expense": false,
+                            "company": 1
+                        },
+                        "code": "PRO-7",
+                        "name": "Meal",
+                        "is_asset": false,
+                        "is_stationary": false,
+                        "is_expense": true,
+                        "company": 1,
+                        "category": 4
+                    },
+                    "create_date": "2023-06-16T09:00:37.943225+07:00",
+                    "write_date": "2023-06-16T09:00:37.976080+07:00",
+                    "create_uid": 4259,
+                    "write_uid": null,
+                    "code": "ALW-7",
+                    "is_accommodation": false,
+                    "company": 1,
+                    "product": 6
+                },
+                "create_date": "2023-06-23T09:38:43.993055+07:00",
+                "write_date": "2023-06-23T09:43:48.574139+07:00",
+                "create_uid": null,
+                "write_uid": null,
+                "cost": 20,
+                "company": null,
+                "allowance": 6,
+                "policy_allowance": 2
+            },
+            "travel_allowance": 2,
+            "date": "2023-06-29",
+            "display_date": "2023-Jun-29"
+        },
+        {
+            "cost": 10,
+            "travel_allowance_info": {
+                "id": 3,
+                "allowance_info": {
+                    "id": 5,
+                    "product_info": {
+                        "id": 7,
+                        "category_info": {
+                            "id": 5,
+                            "create_date": "2023-06-16T08:59:47.486235+07:00",
+                            "write_date": "2023-06-16T08:59:47.518073+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "CAT-5",
+                            "name": "Accomodation",
+                            "is_asset": false,
+                            "is_stationary": false,
+                            "is_expense": false,
+                            "company": 1
+                        },
+                        "code": "PRO-8",
+                        "name": "Guesthouse",
+                        "is_asset": false,
+                        "is_stationary": false,
+                        "is_expense": true,
+                        "company": 1,
+                        "category": 5
+                    },
+                    "create_date": "2023-06-16T09:00:30.531412+07:00",
+                    "write_date": "2023-06-16T09:00:30.591142+07:00",
+                    "create_uid": 4259,
+                    "write_uid": null,
+                    "code": "ALW-6",
+                    "is_accommodation": true,
+                    "company": 1,
+                    "product": 7
+                },
+                "create_date": "2023-06-23T09:38:44.019374+07:00",
+                "write_date": "2023-06-23T09:43:48.606521+07:00",
+                "create_uid": null,
+                "write_uid": null,
+                "cost": 10,
+                "company": null,
+                "allowance": 5,
+                "policy_allowance": 2
+            },
+            "travel_allowance": 3,
+            "date": "2023-06-29",
+            "display_date": "2023-Jun-29"
+        },
+        {
+            "cost": 20.0,
+            "travel_allowance_info": {
+                "id": 2,
+                "allowance_info": {
+                    "id": 6,
+                    "product_info": {
+                        "id": 6,
+                        "category_info": {
+                            "id": 4,
+                            "create_date": "2023-06-16T08:59:36.887919+07:00",
+                            "write_date": "2023-06-16T08:59:36.919233+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "CAT-4",
+                            "name": "Food",
+                            "is_asset": false,
+                            "is_stationary": false,
+                            "is_expense": false,
+                            "company": 1
+                        },
+                        "code": "PRO-7",
+                        "name": "Meal",
+                        "is_asset": false,
+                        "is_stationary": false,
+                        "is_expense": true,
+                        "company": 1,
+                        "category": 4
+                    },
+                    "create_date": "2023-06-16T09:00:37.943225+07:00",
+                    "write_date": "2023-06-16T09:00:37.976080+07:00",
+                    "create_uid": 4259,
+                    "write_uid": null,
+                    "code": "ALW-7",
+                    "is_accommodation": false,
+                    "company": 1,
+                    "product": 6
+                },
+                "create_date": "2023-06-23T09:38:43.993055+07:00",
+                "write_date": "2023-06-23T09:43:48.574139+07:00",
+                "create_uid": null,
+                "write_uid": null,
+                "cost": 20,
+                "company": null,
+                "allowance": 6,
+                "policy_allowance": 2
+            },
+            "travel_allowance": 2,
+            "date": "2023-06-30",
+            "display_date": "2023-Jun-30"
+        }
+    ],
+    "total_cost": 35.0,
+    "duration_days": 1,
+    "travel_geo_area": 3,
+    "travel_country": null,
+    "travel_geo_area_info": {
+        "id": 3,
+        "create_date": "2023-03-30T15:37:41.263879+07:00",
+        "write_date": "2023-03-30T15:37:41.263879+07:00",
+        "create_uid": 1,
+        "write_uid": null,
+        "name": "Kampong Cham",
+        "name_kh": "កំពង់ចាម",
+        "parent_id": 0,
+        "deep_level": 0,
+        "country": 116
+    },
+    "travel_country_info": null
+}
+
+// @/fleets/travels/2
+{
+    "id": 2,
+    "travel_hr_employee_info": {
+        "id": 3016,
+        "full_name": "Khai Hok",
+        "phone_number": "086 338 658",
+        "report_to_info": {
+            "id": 782,
+            "full_name": "Chantha Torn",
+            "employee_id": "3655"
+        },
+        "department_info": {
+            "id": 43,
+            "name": "Technology"
+        },
+        "unit_info": {
+            "id": 126,
+            "name": "Business Digitization"
+        },
+        "employee_id": "4977",
+        "job_info": {
+            "id": 170931,
+            "name": "Mobile Fronted Developer"
+        },
+        "employment_status_info": {
+            "id": 3,
+            "name": "Active"
+        },
+        "office_location_info": {
+            "id": 1,
+            "name": "Head Office"
+        },
+        "employment_date": "2021-11-01",
+        "work_email": "khai.hok@wingbank.com.kh",
+        "employment_type_info": {
+            "id": 41,
+            "name": "Regular (Standard)"
+        },
+        "job_category_info": {
+            "id": 48,
+            "name": "Sales"
+        },
+        "contract_type_info": {
+            "id": 40,
+            "name": "Undetermined Duration Contract (UDC)"
+        },
+        "horizontal_report_to_info": null,
+        "file_info": null
+    },
+    "travel_hr_employee_onbehalf_info": {
+        "id": 3016,
+        "full_name": "Khai Hok",
+        "phone_number": "086 338 658",
+        "report_to_info": {
+            "id": 782,
+            "full_name": "Chantha Torn",
+            "employee_id": "3655"
+        },
+        "department_info": {
+            "id": 43,
+            "name": "Technology"
+        },
+        "unit_info": {
+            "id": 126,
+            "name": "Business Digitization"
+        },
+        "employee_id": "4977",
+        "job_info": {
+            "id": 170931,
+            "name": "Mobile Fronted Developer"
+        },
+        "employment_status_info": {
+            "id": 3,
+            "name": "Active"
+        },
+        "office_location_info": {
+            "id": 1,
+            "name": "Head Office"
+        },
+        "employment_date": "2021-11-01",
+        "work_email": "khai.hok@wingbank.com.kh",
+        "employment_type_info": {
+            "id": 41,
+            "name": "Regular (Standard)"
+        },
+        "job_category_info": {
+            "id": 48,
+            "name": "Sales"
+        },
+        "contract_type_info": {
+            "id": 40,
+            "name": "Undetermined Duration Contract (UDC)"
+        },
+        "horizontal_report_to_info": null,
+        "file_info": null
+    },
+    "travel": [
+        {
+            "id": 2,
+            "travel_country_info": null,
+            "travel_geo_area_info": {
+                "id": 1,
+                "create_date": "2023-03-30T15:37:41.226124+07:00",
+                "write_date": "2023-03-30T15:37:41.226124+07:00",
+                "create_uid": 1,
+                "write_uid": null,
+                "name": "Banteay Meanchey",
+                "name_kh": "បន្ទាយមានជ័យ",
+                "parent_id": 0,
+                "deep_level": 0,
+                "country": 116
+            },
+            "travel_destination": [
+                {
+                    "id": 1,
+                    "travel_allowance_info": {
+                        "id": 2,
+                        "allowance_info": {
+                            "id": 6,
+                            "product_info": {
+                                "id": 6,
+                                "category_info": {
+                                    "id": 4,
+                                    "create_date": "2023-06-16T08:59:36.887919+07:00",
+                                    "write_date": "2023-06-16T08:59:36.919233+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-4",
+                                    "name": "Food",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-7",
+                                "name": "Meal",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 4
+                            },
+                            "create_date": "2023-06-16T09:00:37.943225+07:00",
+                            "write_date": "2023-06-16T09:00:37.976080+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-7",
+                            "is_accommodation": false,
+                            "company": 1,
+                            "product": 6
+                        },
+                        "create_date": "2023-06-23T09:38:43.993055+07:00",
+                        "write_date": "2023-06-23T09:43:48.574139+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 20,
+                        "company": null,
+                        "allowance": 6,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.108515+07:00",
+                    "write_date": "2023-06-23T09:49:52.618598+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-23",
+                    "cost": 10.0,
+                    "travel_destination": 2,
+                    "travel_allowance": 2,
+                    "display_date": "2023-Jun-23"
+                },
+                {
+                    "id": 2,
+                    "travel_allowance_info": {
+                        "id": 3,
+                        "allowance_info": {
+                            "id": 5,
+                            "product_info": {
+                                "id": 7,
+                                "category_info": {
+                                    "id": 5,
+                                    "create_date": "2023-06-16T08:59:47.486235+07:00",
+                                    "write_date": "2023-06-16T08:59:47.518073+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-5",
+                                    "name": "Accomodation",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-8",
+                                "name": "Guesthouse",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 5
+                            },
+                            "create_date": "2023-06-16T09:00:30.531412+07:00",
+                            "write_date": "2023-06-16T09:00:30.591142+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-6",
+                            "is_accommodation": true,
+                            "company": 1,
+                            "product": 7
+                        },
+                        "create_date": "2023-06-23T09:38:44.019374+07:00",
+                        "write_date": "2023-06-23T09:43:48.606521+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 10,
+                        "company": null,
+                        "allowance": 5,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.142742+07:00",
+                    "write_date": "2023-06-23T09:49:52.641515+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-23",
+                    "cost": 10.0,
+                    "travel_destination": 2,
+                    "travel_allowance": 3,
+                    "display_date": "2023-Jun-23"
+                },
+                {
+                    "id": 3,
+                    "travel_allowance_info": {
+                        "id": 2,
+                        "allowance_info": {
+                            "id": 6,
+                            "product_info": {
+                                "id": 6,
+                                "category_info": {
+                                    "id": 4,
+                                    "create_date": "2023-06-16T08:59:36.887919+07:00",
+                                    "write_date": "2023-06-16T08:59:36.919233+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-4",
+                                    "name": "Food",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-7",
+                                "name": "Meal",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 4
+                            },
+                            "create_date": "2023-06-16T09:00:37.943225+07:00",
+                            "write_date": "2023-06-16T09:00:37.976080+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-7",
+                            "is_accommodation": false,
+                            "company": 1,
+                            "product": 6
+                        },
+                        "create_date": "2023-06-23T09:38:43.993055+07:00",
+                        "write_date": "2023-06-23T09:43:48.574139+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 20,
+                        "company": null,
+                        "allowance": 6,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.167981+07:00",
+                    "write_date": "2023-06-23T09:49:52.670409+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-24",
+                    "cost": 20.0,
+                    "travel_destination": 2,
+                    "travel_allowance": 2,
+                    "display_date": "2023-Jun-24"
+                },
+                {
+                    "id": 4,
+                    "travel_allowance_info": {
+                        "id": 3,
+                        "allowance_info": {
+                            "id": 5,
+                            "product_info": {
+                                "id": 7,
+                                "category_info": {
+                                    "id": 5,
+                                    "create_date": "2023-06-16T08:59:47.486235+07:00",
+                                    "write_date": "2023-06-16T08:59:47.518073+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-5",
+                                    "name": "Accomodation",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-8",
+                                "name": "Guesthouse",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 5
+                            },
+                            "create_date": "2023-06-16T09:00:30.531412+07:00",
+                            "write_date": "2023-06-16T09:00:30.591142+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-6",
+                            "is_accommodation": true,
+                            "company": 1,
+                            "product": 7
+                        },
+                        "create_date": "2023-06-23T09:38:44.019374+07:00",
+                        "write_date": "2023-06-23T09:43:48.606521+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 10,
+                        "company": null,
+                        "allowance": 5,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.193614+07:00",
+                    "write_date": "2023-06-23T09:49:52.692606+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-24",
+                    "cost": 10.0,
+                    "travel_destination": 2,
+                    "travel_allowance": 3,
+                    "display_date": "2023-Jun-24"
+                },
+                {
+                    "id": 5,
+                    "travel_allowance_info": {
+                        "id": 2,
+                        "allowance_info": {
+                            "id": 6,
+                            "product_info": {
+                                "id": 6,
+                                "category_info": {
+                                    "id": 4,
+                                    "create_date": "2023-06-16T08:59:36.887919+07:00",
+                                    "write_date": "2023-06-16T08:59:36.919233+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-4",
+                                    "name": "Food",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-7",
+                                "name": "Meal",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 4
+                            },
+                            "create_date": "2023-06-16T09:00:37.943225+07:00",
+                            "write_date": "2023-06-16T09:00:37.976080+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-7",
+                            "is_accommodation": false,
+                            "company": 1,
+                            "product": 6
+                        },
+                        "create_date": "2023-06-23T09:38:43.993055+07:00",
+                        "write_date": "2023-06-23T09:43:48.574139+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 20,
+                        "company": null,
+                        "allowance": 6,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.220579+07:00",
+                    "write_date": "2023-06-23T09:49:52.716041+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-25",
+                    "cost": 20.0,
+                    "travel_destination": 2,
+                    "travel_allowance": 2,
+                    "display_date": "2023-Jun-25"
+                },
+                {
+                    "id": 6,
+                    "travel_allowance_info": {
+                        "id": 3,
+                        "allowance_info": {
+                            "id": 5,
+                            "product_info": {
+                                "id": 7,
+                                "category_info": {
+                                    "id": 5,
+                                    "create_date": "2023-06-16T08:59:47.486235+07:00",
+                                    "write_date": "2023-06-16T08:59:47.518073+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-5",
+                                    "name": "Accomodation",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-8",
+                                "name": "Guesthouse",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 5
+                            },
+                            "create_date": "2023-06-16T09:00:30.531412+07:00",
+                            "write_date": "2023-06-16T09:00:30.591142+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-6",
+                            "is_accommodation": true,
+                            "company": 1,
+                            "product": 7
+                        },
+                        "create_date": "2023-06-23T09:38:44.019374+07:00",
+                        "write_date": "2023-06-23T09:43:48.606521+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 10,
+                        "company": null,
+                        "allowance": 5,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.246331+07:00",
+                    "write_date": "2023-06-23T09:49:52.738813+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-25",
+                    "cost": 10.0,
+                    "travel_destination": 2,
+                    "travel_allowance": 3,
+                    "display_date": "2023-Jun-25"
+                },
+                {
+                    "id": 7,
+                    "travel_allowance_info": {
+                        "id": 2,
+                        "allowance_info": {
+                            "id": 6,
+                            "product_info": {
+                                "id": 6,
+                                "category_info": {
+                                    "id": 4,
+                                    "create_date": "2023-06-16T08:59:36.887919+07:00",
+                                    "write_date": "2023-06-16T08:59:36.919233+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-4",
+                                    "name": "Food",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-7",
+                                "name": "Meal",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 4
+                            },
+                            "create_date": "2023-06-16T09:00:37.943225+07:00",
+                            "write_date": "2023-06-16T09:00:37.976080+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-7",
+                            "is_accommodation": false,
+                            "company": 1,
+                            "product": 6
+                        },
+                        "create_date": "2023-06-23T09:38:43.993055+07:00",
+                        "write_date": "2023-06-23T09:43:48.574139+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 20,
+                        "company": null,
+                        "allowance": 6,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.270305+07:00",
+                    "write_date": "2023-06-23T09:49:52.761147+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-26",
+                    "cost": 10.0,
+                    "travel_destination": 2,
+                    "travel_allowance": 2,
+                    "display_date": "2023-Jun-26"
+                }
+            ],
+            "create_date": "2023-06-23T09:49:52.075474+07:00",
+            "write_date": "2023-06-23T09:49:52.590756+07:00",
+            "create_uid": null,
+            "write_uid": null,
+            "departure_time": "2023-06-23T09:45:28+07:00",
+            "arrival_time": "2023-06-26T09:45:32+07:00",
+            "duration_days": 3,
+            "total_cost": 90.0,
+            "travel": 2,
+            "travel_country": null,
+            "travel_geo_area": 1
+        },
+        {
+            "id": 3,
+            "travel_country_info": null,
+            "travel_geo_area_info": {
+                "id": 2,
+                "create_date": "2023-03-30T15:37:41.241738+07:00",
+                "write_date": "2023-03-30T15:37:41.241738+07:00",
+                "create_uid": 1,
+                "write_uid": null,
+                "name": "Battambang",
+                "name_kh": "បាត់ដំបង",
+                "parent_id": 0,
+                "deep_level": 0,
+                "country": 116
+            },
+            "travel_destination": [
+                {
+                    "id": 8,
+                    "travel_allowance_info": {
+                        "id": 2,
+                        "allowance_info": {
+                            "id": 6,
+                            "product_info": {
+                                "id": 6,
+                                "category_info": {
+                                    "id": 4,
+                                    "create_date": "2023-06-16T08:59:36.887919+07:00",
+                                    "write_date": "2023-06-16T08:59:36.919233+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-4",
+                                    "name": "Food",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-7",
+                                "name": "Meal",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 4
+                            },
+                            "create_date": "2023-06-16T09:00:37.943225+07:00",
+                            "write_date": "2023-06-16T09:00:37.976080+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-7",
+                            "is_accommodation": false,
+                            "company": 1,
+                            "product": 6
+                        },
+                        "create_date": "2023-06-23T09:38:43.993055+07:00",
+                        "write_date": "2023-06-23T09:43:48.574139+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 20,
+                        "company": null,
+                        "allowance": 6,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.367713+07:00",
+                    "write_date": "2023-06-23T09:49:52.855106+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-26",
+                    "cost": 10.0,
+                    "travel_destination": 3,
+                    "travel_allowance": 2,
+                    "display_date": "2023-Jun-26"
+                },
+                {
+                    "id": 9,
+                    "travel_allowance_info": {
+                        "id": 3,
+                        "allowance_info": {
+                            "id": 5,
+                            "product_info": {
+                                "id": 7,
+                                "category_info": {
+                                    "id": 5,
+                                    "create_date": "2023-06-16T08:59:47.486235+07:00",
+                                    "write_date": "2023-06-16T08:59:47.518073+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-5",
+                                    "name": "Accomodation",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-8",
+                                "name": "Guesthouse",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 5
+                            },
+                            "create_date": "2023-06-16T09:00:30.531412+07:00",
+                            "write_date": "2023-06-16T09:00:30.591142+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-6",
+                            "is_accommodation": true,
+                            "company": 1,
+                            "product": 7
+                        },
+                        "create_date": "2023-06-23T09:38:44.019374+07:00",
+                        "write_date": "2023-06-23T09:43:48.606521+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 10,
+                        "company": null,
+                        "allowance": 5,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.392783+07:00",
+                    "write_date": "2023-06-23T09:49:52.877718+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-26",
+                    "cost": 10.0,
+                    "travel_destination": 3,
+                    "travel_allowance": 3,
+                    "display_date": "2023-Jun-26"
+                },
+                {
+                    "id": 10,
+                    "travel_allowance_info": {
+                        "id": 2,
+                        "allowance_info": {
+                            "id": 6,
+                            "product_info": {
+                                "id": 6,
+                                "category_info": {
+                                    "id": 4,
+                                    "create_date": "2023-06-16T08:59:36.887919+07:00",
+                                    "write_date": "2023-06-16T08:59:36.919233+07:00",
+                                    "create_uid": 4259,
+                                    "write_uid": null,
+                                    "code": "CAT-4",
+                                    "name": "Food",
+                                    "is_asset": false,
+                                    "is_stationary": false,
+                                    "is_expense": false,
+                                    "company": 1
+                                },
+                                "code": "PRO-7",
+                                "name": "Meal",
+                                "is_asset": false,
+                                "is_stationary": false,
+                                "is_expense": true,
+                                "company": 1,
+                                "category": 4
+                            },
+                            "create_date": "2023-06-16T09:00:37.943225+07:00",
+                            "write_date": "2023-06-16T09:00:37.976080+07:00",
+                            "create_uid": 4259,
+                            "write_uid": null,
+                            "code": "ALW-7",
+                            "is_accommodation": false,
+                            "company": 1,
+                            "product": 6
+                        },
+                        "create_date": "2023-06-23T09:38:43.993055+07:00",
+                        "write_date": "2023-06-23T09:43:48.574139+07:00",
+                        "create_uid": null,
+                        "write_uid": null,
+                        "cost": 20,
+                        "company": null,
+                        "allowance": 6,
+                        "policy_allowance": 2
+                    },
+                    "create_date": "2023-06-23T09:49:52.417941+07:00",
+                    "write_date": "2023-06-23T09:49:52.901701+07:00",
+                    "create_uid": null,
+                    "write_uid": null,
+                    "date": "2023-06-27",
+                    "cost": 10.0,
+                    "travel_destination": 3,
+                    "travel_allowance": 2,
+                    "display_date": "2023-Jun-27"
+                }
+            ],
+            "create_date": "2023-06-23T09:49:52.339522+07:00",
+            "write_date": "2023-06-23T09:49:52.830597+07:00",
+            "create_uid": null,
+            "write_uid": null,
+            "departure_time": "2023-06-26T09:45:32+07:00",
+            "arrival_time": "2023-06-27T09:49:42+07:00",
+            "duration_days": 1,
+            "total_cost": 30.0,
+            "travel": 2,
+            "travel_country": null,
+            "travel_geo_area": 2
+        }
+    ],
+    "is_onbehalf": false,
+    "create_date": "2023-06-23T09:49:51.912923+07:00",
+    "write_date": "2023-06-23T09:49:52.455385+07:00",
+    "create_uid": 3377,
+    "write_uid": null,
+    "reference_no": "Tra-3",
+    "travel_type": "local",
+    "purpose": "ss",
+    "total_cost": 120.0,
+    "status": "progressing",
+    "company": 1,
+    "hr_employee": 3016,
+    "hr_employee_onbehalf": 3016,
+    "display_create_date": "2023-Jun-23",
+    "display_write_date": "2023-Jun-23"
+}

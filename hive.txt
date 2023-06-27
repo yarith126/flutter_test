@@ -1,0 +1,34 @@
+Hive
+
+== initialize box:
+	var box = await Hive.openBox('myBox');
+	var objBox = await Hive.openBox<E>('objectBox');
+
+== close box:
+	box.close();
+
+== get box instance
+	var box = Hive.open('myBox');
+	var objBox = Hive.open<E>('objectBox');
+
+== CRUD
+	var name = box.get('key');
+	box.put('hello', 'world'); // future type
+	DateTime birthday = box.delete('birthday');
+
+
+{
+      "id": 782,
+      "full_name": "Chantha Torn",
+      "file_info": {
+        "id": "89199dcf-1fe3-4897-9dda-2fda84efd9ca",
+        "file_name": "f68ed3b9-2aab-42d2-bd18-bcfb4d768329.png",
+        "file_url": "/storages/images/f68ed3b9-2aab-42d2-bd18-bcfb4d768329.png",
+        "image_thumbnail_url": "/storages/thumbnails/storages/images/f68ed3b9-2aab-42d2-bd18-bcfb4d768329/ad6ce5a264603d131c580efe169b7669.png",
+        "ref_type": "hr_employee",
+        "ref_id": "782",
+        "file_size": null
+      },
+      "position": "System Developer Lead"
+    },
+}
