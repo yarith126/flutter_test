@@ -1,18 +1,44 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/feature_test/view/google_maps_view.dart';
-import 'package:flutter_demo/feature_test/view/two_apps_one_flutter_view.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_demo/feature/view/api_response_view.dart';
+import 'package:flutter_demo/feature/view/google_maps_view.dart';
+import 'package:flutter_demo/feature/view/one_flutter_two_apps_view.dart';
+import 'package:flutter_demo/firebase_options.dart';
 import 'package:hive_flutter/adapters.dart';
+
+const platform = MethodChannel('demo_channel');
+
+Future<int> detectDebugger() async {
+  return await platform.invokeMethod('detectDebugger');
+}
 
 void main() async {
   await Hive.initFlutter();
   await Hive.openBox('data');
-  runApp(const MyApp());
+  FirebaseApp app = await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  // runApp(const MyApp());
+  runApp(MaterialApp(
+    title: 'Flutter Demo',
+    theme: ThemeData(
+      colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      useMaterial3: true,
+    ),
+    home: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
+  Future<bool> getData() async {
+    await Future<dynamic>.delayed(const Duration(milliseconds: 1000));
+    return true;
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +47,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Homepage'),
     );
   }
 }
@@ -55,13 +82,16 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              'Menu',
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    decoration: TextDecoration.underline,
+                    decorationThickness: 2,
+                    color: Colors.red,
+                    decorationColor: Colors.red,
+                  ),
             ),
+            const SizedBox(height: 10),
             TextButton(
               onPressed: () {
                 Navigator.push(
@@ -75,8 +105,17 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
+                  MaterialPageRoute(builder: (_) => const ApiResponseView()),
+                );
+              },
+              child: const Text('completer'),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
                   MaterialPageRoute(
-                      builder: (_) => const TwoAppsOneFlutterView()),
+                      builder: (_) => const OneFlutterTwoAppsView()),
                 );
               },
               child: const Text('2 Apps 1 Flutter'),
@@ -84,11 +123,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
