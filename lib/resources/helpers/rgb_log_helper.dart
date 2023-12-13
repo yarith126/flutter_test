@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 /// A logger that prints colorful log and report errors
 class RGBLog {
   static bool enable = true;
+  static bool runInReleaseMode = true;
   static bool macMode = false;
 
   static red(msg) => _logger(msg, _Log.red);
@@ -18,7 +19,9 @@ class RGBLog {
   static cyan(msg) => _logger(msg, _Log.cyan);
 
   static _logger(msg, _Log type) {
-    if (!kDebugMode || !enable) return;
+    if (!runInReleaseMode) {
+      if (!kDebugMode || !enable) return;
+    }
     if (RGBLog.macMode) {
       debugPrint('====================\n$msg\n====================');
       return;

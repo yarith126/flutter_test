@@ -40,15 +40,19 @@ dependencies:
   flutter_secure_storage: ^8.0.0
   hive_flutter: ^1.1.0
   go_router: ^8.0.5
-  firebase_core: ^2.15.1
+#  firebase_core: ^2.15.1
   dio: ^5.3.3
+#  flutter_background_service: ^5.0.5
+  flutter_local_notifications: ^16.2.0
+  workmanager: 0.5.1
+  geolocator: ^10.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
+  # encourage good coding prActices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
