@@ -1,23 +1,34 @@
 import 'package:flutter/foundation.dart';
 
 /// A logger that prints colorful log and report errors
+@pragma("vm:entry-point")
 class RGBLog {
+  @pragma("vm:entry-point")
   static bool enable = true;
+  @pragma("vm:entry-point")
   static bool runInReleaseMode = true;
+  @pragma("vm:entry-point")
   static bool macMode = false;
 
+  @pragma("vm:entry-point")
   static red(msg) => _logger(msg, _Log.red);
 
+  @pragma("vm:entry-point")
   static green(msg) => _logger(msg, _Log.green);
 
+  @pragma("vm:entry-point")
   static yellow(msg) => _logger(msg, _Log.yellow);
 
+  @pragma("vm:entry-point")
   static blue(msg) => _logger(msg, _Log.blue);
 
+  @pragma("vm:entry-point")
   static pink(msg) => _logger(msg, _Log.pink);
 
+  @pragma("vm:entry-point")
   static cyan(msg) => _logger(msg, _Log.cyan);
 
+  @pragma("vm:entry-point")
   static _logger(msg, _Log type) {
     if (!runInReleaseMode) {
       if (!kDebugMode || !enable) return;
@@ -34,6 +45,7 @@ class RGBLog {
     if (type == _Log.cyan) debugPrint('\x1B[96m$msg\x1B[0m');
   }
 
+  @pragma("vm:entry-point")
   static error(Object? error, [StackTrace? stackTrace, Object? location]) {
     if (!kDebugMode || !enable) return;
     // remove unnecessary last character
@@ -59,4 +71,5 @@ class RGBLog {
   }
 }
 
+@pragma("vm:entry-point")
 enum _Log { red, green, yellow, blue, pink, cyan }

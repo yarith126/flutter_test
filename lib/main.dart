@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_demo/feature/view/api_response_view.dart';
 import 'package:flutter_demo/feature/view/google_maps_view.dart';
 import 'package:flutter_demo/firebase_options.dart';
-import 'package:flutter_demo/resources/core/background_service.dart';
+import 'package:flutter_demo/test_app.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:hive_flutter/adapters.dart';
 
@@ -33,6 +33,6 @@ void main() async {
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       useMaterial3: true,
     ),
-    home: MyApp(),
+    home: MyTestApp(),
   ));
 }
